@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>MoKePón!</title>
+        <link rel="stylesheet" href="./diseño.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+
+        <section id="elige-tu-mokepon">
+            <h1 class="titulo">MoKePóN!</h1>
+
+                <h2 class="elige-mokepon">elige tu mokepón:</h2>
+
+                <div id="contenedorTarjetas" class="tarjetas">
+
+                </div>
+
+            <button class="seleccionar-mokepon" id="boton-choose">¡A PELEAR!</button>
+        </section>
+
+        <section id="ver-mapa">
+            <h1 class="titulo">Ciudad Girasol</h1>
+            <h2>encuentra combates emocionantes</h2>
+            <canvas id="mapa"></canvas>
+            <button onmouseup="stopMoving()" onmousedown="moverArriba()">arriba</button>
+            <div>
+                <button onmouseup="stopMoving()" onmousedown="moverIzquierda()">izquierda</button>
+                <button onmouseup="stopMoving()" onmousedown="moverAbajo()">abajo</button>
+                <button onmouseup="stopMoving()" onmousedown="moverDerecha()">derecha</button>
+            </div>
+
+        </section>
+        
+        <section id="estadisticas-de-combate">
+
+                <h1 class="titulo">MoKePóN!</h1>
+
+                <div class="combate">
+                    <h2 class="estadisticas">estadisticas de combate</h2>
+                    
+                    <div class="mensajes">
+                        <div class="mensaje-aliado">
+                            <p><span id="mokepon-player"></span><span id="vida-mokepon"></span> de HP</p>
+                        </div>
+                        
+                        <div class="mensaje-enemigo">
+                            <p><span id="mokepon-enemigo"></span><span id="vida-enemigo"></span> de HP</p>
+                        </div>
+                    </div>
+                    
+
+                </div>
+        </section>
+
+
+        <section id="reinicio">
+            <button class="boton-reiniciar" id="boton-reinicio">reiniciar</button>
+        </section>
+        
+        <section id="elige-un-ataque">
+
+            <div class="eleccion-ataque">
+                <h2 id="resultado">¡elige un ataque!</h2>
+            </div>
+
+
+            <div id="contenedorBotones" class="botones">
+            </div>
+        </section>
+        
+        <div class="informacion" id="información">
+            <section class="mensajes-jugador" id="mensajes-player">
+            </section>
+
+            <section class="mensaje-contrario" id="mensajes-enemigo">
+            </section>
+        </div>
+        <script src="./js/mokepon.js"></script>
+    </body>
+</html>

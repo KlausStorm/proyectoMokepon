@@ -1,0 +1,545 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&family=Orbitron:wght@400..900&family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&display=swap');@import url('https://fonts.googleapis.com/css2?family=Jersey+15&family=Orbitron:wght@400..900&family=Pixelify+Sans:wght@400..700&display=swap');@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Pixelify+Sans:wght@400..700&display=swap');
+body{
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background-image: url("./assets/1660f62e4ab72b40332deb7f133b880d.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    font-variant-caps: small-caps;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.titulo{
+
+    font-size: 450%;
+    color: rgb(39, 123, 248);
+    width: 100%;
+    height: 100px;
+    background-color: rgb(245, 223, 27);
+    border-radius: 0%;
+    margin: auto;
+}
+
+#elige-tu-mokepon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+}
+
+#ver-mapa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+}
+
+#ver-mapa button {
+    width: 190px;
+    height: 60px;
+    color: rgb(39, 123, 248);
+    background: rgb(245, 223, 27);
+    border-radius: 6px;
+    border-top: 3px solid rgb(39, 123, 248);
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 36px;
+    margin: 10px 0px;
+    margin: 10px;
+    border-bottom: 3px solid royalblue;
+}
+
+.elige-mokepon{
+    font-size: 28px;
+    background: aliceblue;
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: black;
+    border-style: double;
+    height: 100px;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.tarjetas{
+    display: flex;
+    margin: 10px;
+    gap: 5px;
+}
+
+
+
+.tarjeta-mokepon-agua{
+    width: 360px;
+    height: 250px;
+    color: rgb(11, 49, 99);
+    background: rgb(151, 182, 248);
+    padding: 10px;
+    margin: 2px;
+    border: 5px solid rgb(19, 37, 95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+.tarjeta-mokepon-agua img{
+    width: 150px;
+    height: 150px;
+    margin: 0px 10px;
+}
+
+
+.tarjeta-mokepon-fuego{
+    width: 360px;
+    height: 250px;
+    color: rgb(110, 1, 1);
+    background: rgb(218, 140, 39);
+    padding: 10px;
+    margin: 2px;
+    border: 5px solid rgb(133, 17, 17);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+.tarjeta-mokepon-fuego img{
+    width: 150px;
+    height: 150px;
+    margin: 0px 10px;
+}
+
+
+.tarjeta-mokepon-tierra{
+    width: 360px;
+    height: 250px;
+    color: rgb(71, 60, 35);
+    background: rgb(177, 149, 116);
+    padding: 10px;
+    margin: 2px;
+    border: 5px solid rgb(94, 57, 43);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+.tarjeta-mokepon-tierra img{
+    width: 150px;
+    height: 150px;
+    margin: 0px 10px;
+}
+
+
+.tarjeta-mokepon-viento{
+    width: 360px;
+    height: 250px;
+    color: rgb(34, 34, 34);
+    background: rgb(180, 210, 235);
+    padding: 10px;
+    margin: 2px;
+    border: 5px solid rgb(108, 165, 211);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-size: 24px;
+}
+.tarjeta-mokepon-viento img{
+    width: 150px;
+    height: 150px;
+    margin: 0px 10px;
+}
+
+
+.tarjeta-mokepon-hielo{
+    width: 360px;
+    height: 250px;
+    color: rgb(0, 71, 71);
+    background: rgb(113, 234, 243);
+    padding: 10px;
+    margin: 2px;
+    border: 5px solid rgb(26, 134, 161);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+.tarjeta-mokepon-hielo img{
+    width: 150px;
+    height: 150px;
+    margin: 0px 10px;
+}
+
+
+.seleccionar-mokepon{
+    width: 545px;
+    height: 70px;
+    color: rgb(39, 123, 248);
+    background: rgb(245, 223, 27);
+    padding: 0px;
+    border-radius: 6px;
+    border-top: 3px solid rgb(39, 123, 248);
+    border-left: 3px solid rgb(39, 123, 248);
+    border-right: 3px solid royalblue;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 45px;
+    margin-bottom: 5px;
+    border-bottom: 3px solid royalblue;
+}
+
+input{
+    display: none;
+}
+
+
+input:hover + .tarjeta-mokepon-agua{
+    background-color: rgb(206, 219, 241);
+}
+
+input:hover + .tarjeta-mokepon-fuego{
+    background-color: rgb(218, 189, 162);
+}
+
+input:hover + .tarjeta-mokepon-tierra{
+    background-color: rgb(202, 179, 161);
+}
+
+input:hover + .tarjeta-mokepon-viento{
+    background-color: rgb(204, 239, 240);
+}
+
+input:hover + .tarjeta-mokepon-hielo{
+    background-color: rgb(179, 247, 238);
+}
+
+
+input:checked + .tarjeta-mokepon-agua{
+    background-color: rgb(229, 231, 194);
+}
+
+input:checked + .tarjeta-mokepon-fuego{
+    background-color: rgb(229, 231, 194);
+}
+
+input:checked + .tarjeta-mokepon-tierra{
+    background-color: rgb(229, 231, 194);;
+}
+
+input:checked + .tarjeta-mokepon-viento{
+    background-color: rgb(229, 231, 194);
+}
+
+input:checked + .tarjeta-mokepon-hielo{
+    background-color: rgb(229, 231, 194);
+}
+
+
+
+#estadisticas-de-combate{
+    flex-direction: column;
+    align-items: center;
+}
+
+.combate{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.estadisticas{
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 36px;
+    background: aliceblue;
+    border: black;
+    border-style: double;
+    border-width: 10px;
+    width: 400px;
+    height: 100px;
+}
+
+.mensajes{
+    display: flex;
+    gap: 100px;
+    margin: 20px;
+    margin-top: -15px;
+}
+
+.mensaje-aliado{
+    font-size: 24px;
+    background: white;
+    border: black;
+    border-style: double;
+    width: 180px;
+}
+#mokepon-player{
+    display: inherit;
+}
+#mokepon-enemigo{
+    display: inherit;
+}
+
+.mensaje-enemigo{
+    font-size: 24px;
+    background: white;
+    border: black;
+    border-style: double;
+    width: 180px;;
+}
+
+.informacion{
+    display: flex;
+    gap: 80px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.mensajes-jugador{
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    width: 330px;
+    background: white;
+    border: black;
+    border-style: double;
+    font-size: 28px;
+    margin-top: auto;
+    height: 100px;
+}
+.mensajes-p1{
+    margin: 1px;
+}
+
+.mensaje-contrario{
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    width: 320px;
+    background: white;
+    border: black;
+    border-style: double;
+    font-size: 28px;
+}
+
+.boton-reiniciar{
+    width: 100px;
+    border-radius: 2px;
+    margin: 5px;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    background: rgb(245, 223, 27);
+    color: rgb(39, 123, 248);
+}
+
+
+#elige-un-ataque{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.eleccion-ataque{
+    font-size: 15px;
+    background: aliceblue;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: black;
+    border-style: double;
+    height: 100px;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.botones{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.fuego{
+    background: #ffdcbe;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    border-top-color: coral;
+    border-bottom-color: #ff3d03;
+    border-left-color: #ff6b33;
+    border-right-color: red;
+}
+
+.agua{
+    background: #bee1ff;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    border-top-color: #50beff;
+    border-bottom-color: #0373ff;
+    border-left-color: #50beff;
+    border-right-color: #0373ff;
+}
+
+.viento{
+    background: #f3f3f3;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    border-top-color: #afaead;
+    border-bottom-color: #6a6a6a;
+    border-left-color: #afaead;
+    border-right-color: #6a6a6a;
+}
+
+.tierra{
+    background: #cba57e;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    border-top-color: #fbcfa1;
+    border-bottom-color: #bd7f4b;
+    border-left-color: #fbcfa1;
+    border-right-color: #bd7f4b;
+}
+
+.hielo{
+    background: #befcff;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    border-top-color: #50efff;
+    border-bottom-color: #03aeff;
+    border-left-color: #50efff;
+    border-right-color: #03aeff;
+}
+
+.normal{
+    background: #c9cfcf;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    border-top-color: #a4a7a7;
+    border-bottom-color: #505050;
+    border-left-color: #a4a7a7;
+    border-right-color: #505050;
+}
+
+.heal{
+    background: #a8f5b8;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    border-top-color: #87f36c;
+    border-bottom-color: #4ab946;
+    border-left-color: #87f36c;
+    border-right-color: #4ab946;
+}
+
+.guard{
+    background: #efccfd;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    border-top-color: #f0cdfd;
+    border-bottom-color: #b577ce;
+    border-left-color: #f0cdfd;
+    border-right-color: #b577ce;
+}
+
+.stats{
+    background: #fdff9c;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    border-top-color: #faffc9;
+    border-bottom-color: #dbd946;
+    border-left-color: #faffc9;
+    border-right-color: #dbd946;
+}
+
+#mapa{
+    border: 2px solid #4ab946;
+}
+
+@media (max-width: 1450px){
+    .tarjetas, .botones, .tarjeta-mokepon-agua, .tarjeta-mokepon-fuego, .tarjeta-mokepon-hielo, .tarjeta-mokepon-tierra, .tarjeta-mokepon-viento{
+        flex-direction: column;
+        height: fit-content;
+        align-content: center;
+        display: flex;
+    }
+    .tarjeta-mokepon-agua, .tarjeta-mokepon-fuego, .tarjeta-mokepon-hielo, .tarjeta-mokepon-tierra, .tarjeta-mokepon-viento{
+        width: 300px;
+    }
+    .mensajes, .informacion{
+        flex-direction: column;
+        gap: 25px;
+    }
+    body{
+        background-size: 460%;
+    }
+}
+
+@media (max-width: 400px){
+    #ver-mapa div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 340px;
+    }
+}
